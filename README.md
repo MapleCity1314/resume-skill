@@ -25,25 +25,7 @@
 
 ## 端到端工作流
 
-```
-          你的简历
-              ↓
-    ┌── resume-editor ──────────┐
-    │  整体诊断 / 评分 / 写作引导  │
-    └──────────────┬────────────┘
-                   │ 路由到专项 skill
-      ┌────────────┼─────────────────────────────┐
-      ↓            ↓            ↓                 ↓
-resume-jd-match  resume-     resume-          resume-
-  JD 对齐分析   experience  project          skills
-                 工作经历改写  项目经历改写     技能模块优化
-      ↓            ↓            ↓                 ↓
-  resume-ats   resume-summary              resume-interview-bridge
-  ATS 兼容检查  自我评价改写                  面试衔接预测
-      ↓
-resume-file-export        resume-cover-letter
-   导出 PDF/Markdown          BOSS 打招呼语 / 私信
-```
+![alt text](image.png)
 
 ---
 
