@@ -213,3 +213,104 @@ MLOps：模型训练调度 / A/B 实验框架 / ONNX 推理优化
 - [ ] 每个「熟练」技能，在工作/项目经历里有对应的实践吗？
 - [ ] 技能里提到的工具，经历里有具体用它解决过什么问题吗？
 - [ ] 如果不一致 → 要么删掉技能条目，要么在经历里补充使用场景
+
+---
+
+### 数据分析 / 数据工程
+
+**推荐分类结构**：
+```
+数据处理：Python（Pandas/NumPy/Polars）/ SQL（窗口函数/CTE/执行计划优化）/ Spark / Hive
+数据可视化：Tableau / Power BI / 自研看板（ECharts / Metabase）
+数据工程：ETL Pipeline / 数据仓库（ODS/DWD/DWS/ADS 分层建模）/ Flink / Airflow / dbt
+实验分析：A/B 测试设计与分析 / 显著性检验 / 留存/漏斗/归因分析
+BI 工具：Quick BI / 神策数据 / GrowingIO / Google Analytics
+```
+
+**写法要点**：
+- SQL 写你能做到的深度（窗口函数/子查询/索引优化 > 会基础 SELECT）
+- Python 写你用它做什么（数据清洗 / 自动化报表 / 建模 / 可视化），而非只写"熟悉 Python"
+- 数据工程方向：写清楚数据链路（从哪来到哪去）和你负责的层级（采集/清洗/建模/分析）
+- A/B 测试：写是否具备从实验设计到数据分析的全流程能力（避免只写"了解 A/B 测试"）
+
+---
+
+### 移动端开发（iOS / Android / 跨平台）
+
+**推荐分类结构（iOS）**：
+```
+语言：Swift（语法糖/并发/Combine）/ Objective-C（维护）
+框架：UIKit / SwiftUI（适配 iOS 16+）/ CoreData / CoreML
+工具链：Xcode / Instruments（性能分析）/ Fastlane / TestFlight
+```
+
+**推荐分类结构（Android）**：
+```
+语言：Kotlin（协程/Flow/扩展函数）/ Java（维护）
+框架：Jetpack Compose / MVVM / Room / WorkManager / Navigation
+工具链：Android Studio / Profiler / Gradle / Firebase
+```
+
+**推荐分类结构（跨平台）**：
+```
+Flutter：Dart / Widget 生命周期 / 状态管理（Provider/Riverpod/Bloc）/ 自定义 Channel
+React Native：JSX / 原生模块桥接 / Hermes / CodePush 热更新
+uni-app：Vue3 / 小程序端适配 / 条件编译
+```
+
+**量化指标参考**：
+- App Store / Google Play 评分（持续维护成果）
+- Crash 率（‰）优化
+- 启动时间（冷启动 ms）
+- 包体积减少量（MB / %）
+- 负责产品的 MAU
+
+**写法要点**：
+- 写版本倾向（SwiftUI 还是 UIKit？Compose 还是传统 View？体现是否追踪最新趋势）
+- 跨平台工程师：明确主攻平台（"以 Flutter 为主，具备原生 iOS 基础"），避免让人觉得什么都会但什么都不深
+- 性能优化经历一定要量化（从 X 优化到 Y）
+
+---
+
+### DevOps / 云原生 / SRE
+
+**推荐分类结构**：
+```
+容器化：Docker（多阶段构建/镜像优化）/ Kubernetes（Deployment/Service/HPA/网络策略）
+CI/CD：GitHub Actions / GitLab CI / Jenkins / ArgoCD / Helm
+云平台：AWS（EC2/S3/RDS/Lambda）/ 阿里云（ECS/OSS/RDS/ACK）/ 腾讯云
+监控告警：Prometheus + Grafana / ELK Stack / SkyWalking / PagerDuty / 阿里云 ARMS
+基础设施即代码：Terraform / Ansible / Pulumi
+网络与安全：Nginx / Kong / VPC / WAF / SSL 证书管理
+```
+
+**写法要点**：
+- 区分 DevOps 工程师（关注 CI/CD 流水线/自动化）和 SRE（关注稳定性/SLA/容量）
+- 写清楚你维护的系统规模（服务数量/QPS/团队规模）
+- 稳定性数据最有说服力：SLA 99.9% → 99.99%；将故障恢复时间从 X 分钟降至 Y 分钟
+- 国内云平台（阿里云/腾讯云/华为云）经验同样有价值，不必只写 AWS
+
+---
+
+### 2025 AI 应用层工具
+
+> 本段针对 AI 应用工程师（LLM 应用方向），区别于算法工程师（模型训练方向）。
+
+**推荐分类结构**：
+```
+LLM 调用与管理：OpenAI API / Claude API（Anthropic SDK）/ 通义千问 / 文心一言 / 硅基流动
+提示工程：Prompt Engineering / Few-shot / Chain of Thought / 系统 Prompt 设计
+RAG 工程化：LangChain / LlamaIndex / 向量数据库（Chroma/Qdrant/Weaviate/Milvus）/ 混合检索（BM25 + 向量）
+Agent 框架：LangGraph / CrewAI / AutoGen / Dify / Coze 工作流
+MCP 协议：MCP Server 开发 / MCP Client 集成 / Tool Use / Function Calling 设计
+工程化与部署：LiteLLM / vLLM / Ollama（本地部署）/ FastAPI 封装 / 流式输出（SSE/WebSocket）
+评测与监控：LangSmith / PromptFlow / 自定义评测（人工+自动）/ 成本与延迟监控
+```
+
+**写法要点**：
+- 区分「会调 API」和「有工程化落地经验」——后者价值高得多，要写清楚你搭建了什么系统
+- RAG 方向：写清楚 chunk 策略 / 检索方案 / 重排（Reranker）/ 评测指标，而非只写"用了 LangChain"
+- Agent 方向：写清楚解决了什么业务场景（不是"做了个聊天机器人"），工具调用设计，多 Agent 协作方案
+- MCP：如有 MCP Server 开发经验（含工具暴露/资源读取），明确写出，2025 年市场认知度已较高
+- 本地部署（Ollama/vLLM）经验：写清楚部署的模型和场景（隐私合规/成本控制）
+- 评测经验：HR 和技术面试官都会关注"你怎么衡量 LLM 应用效果"，这是高含金量项
