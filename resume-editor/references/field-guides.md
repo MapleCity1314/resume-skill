@@ -366,3 +366,111 @@ ERP（SAP/Oracle）、物流优化、成本控制、交期管理、
 | 传媒/公关 | 已发布的媒体报道链接合集 |
 
 **通用建议**：作品集链接尽量简短易输入，推荐短链（bit.ly、短网址）或 notion.site。
+
+---
+
+## 0.7 DevOps / SRE / 云原生
+
+### 核心技能词汇
+Docker（多阶段构建/镜像优化）/ Kubernetes（Deployment/Service/HPA/Ingress/NetworkPolicy）/ Helm / ArgoCD（GitOps）/ Terraform / Ansible / GitHub Actions / GitLab CI / Jenkins / Prometheus + Grafana / ELK Stack / SkyWalking / Jaeger（分布式追踪）/ AWS（EC2/EKS/RDS/Lambda/S3）/ 阿里云（ECS/ACK/OSS/SLB）/ 腾讯云 / NGINX / Kong（API 网关）/ Vault（密钥管理）
+
+### 量化指标参考
+- 系统 SLA（99.9% → 99.99%）
+- 故障平均恢复时间（MTTR 降低 X 分钟）
+- 部署频率（从 X 次/月提升至 X 次/天）
+- 构建流水线耗时（降低 X%）
+- 基础设施成本节约（元 / 比例）
+- 管理服务/节点数规模
+
+### 描述示例
+- **弱**：「负责公司的运维工作和部署。」
+- **强**：「主导核心业务微服务（30+个）容器化改造（Docker + K8s），
+  搭建 GitOps 部署流水线（GitLab CI + ArgoCD），
+  将发布频率从每月 2 次提升至每日 10+ 次，
+  故障平均恢复时间从 45 分钟降至 8 分钟，
+  基础设施成本通过节点自动弹性伸缩降低 35%。」
+
+---
+
+## 0.8 AI 应用工程师（LLM 应用层）
+
+> 区别于 AI 算法工程师（侧重模型训练），AI 应用工程师侧重 LLM 的工程化落地。
+
+### 核心技能词汇
+**LLM 调用**：OpenAI API / Claude API（Anthropic SDK）/ 通义千问 / 文心一言 / 硅基流动 / LiteLLM
+**提示工程**：Prompt Engineering / System Prompt 设计 / Few-shot / Chain of Thought / 结构化输出
+**RAG 工程**：LangChain / LlamaIndex / 向量数据库（Chroma/Qdrant/Weaviate/Milvus/Pinecone）/ 文档解析 / Chunking 策略 / BM25 + 向量混合检索 / Reranker（交叉编码器）
+**Agent 开发**：LangGraph / CrewAI / AutoGen / Dify / Coze / Function Calling / Tool Use / MCP Server 开发
+**工程化**：流式输出（SSE）/ FastAPI / 上下文窗口管理 / Token 成本优化
+**评测**：LangSmith / PromptFlow / RAGAS / 人工评测 + 自动评测
+
+### 量化指标参考
+- RAG 召回准确率（Hit@K / MRR）提升幅度
+- 回答质量人工评测满意度（%）
+- 人工客服咨询量降低比例
+- 系统日均处理请求量（QPS / 条数）
+- Token 成本优化比例（通过缓存/蒸馏/模型选型）
+- 服务用户规模（日活/月活）
+
+### 描述示例
+- **弱**：「做了一个基于 LLM 的对话系统。」
+- **强**：「基于 LangChain + Claude API 构建企业内部知识库问答系统，
+  设计分层 Chunk 策略（段落级 + 句子级）+ BM25 混合检索 + Reranker，
+  召回 Hit@5 准确率较纯向量检索提升 28%，
+  接入 MCP 协议实现与内部 OA 系统的工具调用集成，
+  服务 800+ 内部员工，人工客服咨询量降低 52%，
+  月均 Token 成本通过 Prompt 缓存优化降低 41%。」
+
+---
+
+## 0.9 安全工程师
+
+### 核心技能词汇
+**渗透测试**：Nmap / Burp Suite / Metasploit / OWASP Top 10 / SQL 注入/XSS/SSRF/越权
+**安全运营（SecOps）**：SIEM（Splunk/ELK）/ WAF / IDS/IPS / 漏洞扫描（Nessus/AWVS）/ 应急响应
+**DevSecOps**：SAST（SonarQube/Semgrep）/ DAST / 软件供应链安全（SBOM）/ 容器镜像扫描
+**合规**：等保 2.0 / ISO 27001 / 数据安全法 / 个人信息保护法
+**密码学基础**：对称/非对称加密 / TLS/SSL / PKI / JWT
+
+### 量化指标参考
+- 漏洞发现数量（高危/中危/低危）及修复率
+- 等保/ISO 认证项目数
+- 安全事件响应时间（平均分钟数）
+- 渗透测试覆盖系统数
+- 代码扫描行数 / SAST 误报率降低
+
+### 描述示例
+- **弱**：「负责公司安全工作和漏洞修复。」
+- **强**：「主导公司业务系统年度渗透测试（覆盖 30+ Web 应用），
+  发现并协助修复高危漏洞 12 个（含 SQL 注入 3 个、越权漏洞 5 个），
+  修复率 100%，上线 WAF 后 Web 攻击拦截率提升至 99.3%；
+  独立完成等保 2.0 三级认证全流程（6 个系统），顺利通过测评。」
+
+---
+
+## 0.10 测试工程师 / QA
+
+### 核心技能词汇
+**手工测试**：测试用例设计（等价类/边界值/判定表）/ 需求分析 / Bug 管理（JIRA/禅道）/ 探索性测试
+**自动化测试**：Selenium / Playwright / Cypress / Appium（移动端）/ pytest / JUnit / TestNG
+**性能测试**：JMeter / k6 / Locust / 压测方案设计 / 瓶颈分析
+**接口测试**：Postman / REST Assured / pytest + requests
+**CI/CD 集成**：测试流水线集成 / 测试报告（Allure）/ 测试覆盖率（Coverage）
+**专项**：安全测试基础 / 兼容性测试 / A/B 测试校验
+
+### 量化指标参考
+- 自动化测试覆盖率（%）及提升幅度
+- 自动化节省的人工测试工时（小时/月）
+- Bug 发现数（按严重级别）/ 漏测率降低
+- 版本测试周期缩短（天数）
+- 性能测试瓶颈定位及优化结果（QPS/响应时间）
+
+### 描述示例
+- **弱**：「负责产品的测试工作，保障质量。」
+- **强**：「主导核心业务自动化测试体系搭建（Pytest + Playwright），
+  从 0 到 1 编写 UI 自动化用例 300+，接口用例 500+，
+  测试覆盖率从 15% 提升至 72%，
+  每个版本回归测试时间从 3 天缩短至 4 小时，
+  上线后线上 P0/P1 Bug 数同比下降 60%；
+  负责大促前压测（JMeter），识别并推动修复系统瓶颈 5 处，
+  大促期间系统稳定性 SLA 99.98%。」
