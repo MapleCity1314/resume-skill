@@ -76,7 +76,7 @@ resume-file-export        resume-cover-letter
 ### 1. 安装技能包
 
 ```bash
-git clone https://github.com/MapleCity1314/resume-skill.git
+npx skills add MapleCity1314/resume-skill
 ```
 
 在 Claude Code 中加载技能目录，然后用自然语言触发：
